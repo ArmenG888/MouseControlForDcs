@@ -1,27 +1,32 @@
+import sys
 from tkinter import *
 import keyboard,pyautogui,time
 import vgamepad as vg
 
+from PySide2 import QtCore,QtWidgets
 
 
-root = Tk() 
-root.title("Mouse Control For DCS World")
+from ui_mouseControl import Ui_MainWindow
 
 
-title = Label(root, text="Mouse Control For DCS World",font=("Helvetica", 24))
-title.grid(pady=20, padx=20) 
+class main(QtWidgets.QMainWindow):
+    def __init__(self):
+        QtWidgets.QMainWindow.__init__(self)
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+       
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
 
-label = Label(root, text="Your Input:")
-label.grid(row=1, column=0, padx=10, pady=10)  # placing it in the first row, first column
+        self.show()
+        self.setWindowTitle('Mouse Control For Dcs')
 
-# Create an Entry widget for user input
-entry = Entry(root)
-entry.grid(row=1, column=0, padx=10, pady=10)  # placing it in the first row, second column
+    def close(self):
+        quit()
 
-
-root.geometry("800x600")
-mainloop() 
-
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    window = main()
+    sys.exit(app.exec_())
 
 # gamepad = vg.VX360Gamepad()
 # gamepad.press_button(button=vg.XUSB_BUTTON.XUSB_GAMEPAD_A)
