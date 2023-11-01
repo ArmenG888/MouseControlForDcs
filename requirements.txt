@@ -1,0 +1,4 @@
+keyboard
+pyautogui
+vgamepad
+PySide2
