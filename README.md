@@ -17,7 +17,6 @@
 3. **Install the required dependencies:**:
    <pre>pip install -r requirements.txt</pre>
 
-or download the exe from [here](https://github.com/ArmenG888/MouseControlForDcs/releases/tag/v0.1)
 
 ## 🎮 Usage
 
