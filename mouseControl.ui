@@ -99,6 +99,12 @@
          <property name="styleSheet">
           <string notr="true">border: 1px solid #323239; color:white;</string>
          </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
         </widget>
        </item>
       </layout>
@@ -137,6 +143,12 @@
          </property>
          <property name="styleSheet">
           <string notr="true">border: 1px solid #323239; color:white;</string>
+         </property>
+         <property name="text">
+          <string>~</string>
+         </property>
+         <property name="placeholderText">
+          <string>~</string>
          </property>
         </widget>
        </item>

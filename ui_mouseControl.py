@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mouseControlAUpQZq.ui'
+## Form generated from reading UI file 'mouseControlDEtncw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -125,7 +125,11 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"Mouse Control For DCS World", None))
         self.label_3.setText("")
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Sensitivity    ", None))
+        self.sens.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.sens.setPlaceholderText("")
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Key To Center", None))
+        self.key.setText(QCoreApplication.translate("MainWindow", u"~", None))
+        self.key.setPlaceholderText(QCoreApplication.translate("MainWindow", u"~", None))
         self.startBtn.setText(QCoreApplication.translate("MainWindow", u"Start", None))
     # retranslateUi
 
