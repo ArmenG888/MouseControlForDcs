@@ -2,6 +2,8 @@
 
 **DCS World Mouse-to-Controller** is a simple application that translates mouse movements into joystick-like controls for DCS World. Instead of using a joystick or controller, pilots can now utilize their mouse to maneuver aircraft and perform precise actions.
 
+<img src="/MouseControlForDcs/screenshot.png">
+
 ## 🚀 Features
 
 - 🖱️ **Mouse Movement Translation**: Convert mouse movements into joystick commands.
