@@ -13,7 +13,7 @@
 1. **Clone the repository**:
    <pre>git clone https://github.com/ArmenG888/MouseControlForDcs</pre>
 2. **Navigate to the project directory**
-   <pre>cd MouseControlForDcs</pre>
+   <pre>cd /MouseControlForDcs/MouseControlForDcs</pre>
 3. **Install the required dependencies:**:
    <pre>pip install -r requirements.txt</pre>
 
