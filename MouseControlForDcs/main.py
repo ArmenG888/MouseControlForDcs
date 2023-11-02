@@ -18,9 +18,12 @@ def convert(sens, key):
         gamepad.right_joystick_float(x_value_float=x, y_value_float=y)
         gamepad.update()
         time.sleep(0.01)
+        if stop_thread:
+            break
         if keyboard.is_pressed(key):
             offset_x, offset_y = pyautogui.position()
 
+stop_thread = False
 
 class main(QtWidgets.QMainWindow):
     def __init__(self):
@@ -37,9 +40,11 @@ class main(QtWidgets.QMainWindow):
         
     def start(self):
         if self.ui.startBtn.text() == 'Stop':
-            quit()
+            stop_thread = True
+            self.ui.startBtn.setText('Start')
         else:
             self.ui.startBtn.setText('Stop')
+            stop_thread = False
             threading.Thread(target=convert, daemon=True, args=(self.ui.sens.text(),self.ui.key.text(),)).start()
             
     def close(self):
