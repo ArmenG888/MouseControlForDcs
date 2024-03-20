@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mouseControlDEtncw.ui'
+## Form generated from reading UI file 'mouseControlNlbZVM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -61,13 +61,19 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.label_2)
 
-        self.sens = QLineEdit(self.verticalLayoutWidget)
+        self.sens = QDoubleSpinBox(self.verticalLayoutWidget)
         self.sens.setObjectName(u"sens")
         self.sens.setFont(font1)
-        self.sens.setStyleSheet(u"border: 1px solid #323239; color:white;")
+        self.sens.setLayoutDirection(Qt.LeftToRight)
+        self.sens.setStyleSheet(u"border: 1px solid #323239; color:white; height:auto;")
+        self.sens.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.sens.setSingleStep(0.010000000000000)
+        self.sens.setValue(1.000000000000000)
 
         self.horizontalLayout.addWidget(self.sens)
 
+        self.horizontalLayout.setStretch(0, 1)
+        self.horizontalLayout.setStretch(1, 8)
 
         self.verticalLayout.addLayout(self.horizontalLayout)
 
@@ -85,7 +91,7 @@ class Ui_MainWindow(object):
         self.key = QLineEdit(self.verticalLayoutWidget)
         self.key.setObjectName(u"key")
         self.key.setFont(font1)
-        self.key.setStyleSheet(u"border: 1px solid #323239; color:white;")
+        self.key.setStyleSheet(u"border: 1px solid #323239; color:white; height:auto;")
 
         self.horizontalLayout_2.addWidget(self.key)
 
@@ -125,11 +131,8 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"Mouse Control For DCS World", None))
         self.label_3.setText("")
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Sensitivity    ", None))
-        self.sens.setText(QCoreApplication.translate("MainWindow", u"1", None))
-        self.sens.setPlaceholderText("")
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Key To Center", None))
         self.key.setText(QCoreApplication.translate("MainWindow", u"~", None))
-        self.key.setPlaceholderText(QCoreApplication.translate("MainWindow", u"~", None))
         self.startBtn.setText(QCoreApplication.translate("MainWindow", u"Start", None))
     # retranslateUi
 

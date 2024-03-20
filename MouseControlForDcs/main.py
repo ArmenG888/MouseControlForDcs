@@ -39,7 +39,7 @@ class main(QtWidgets.QMainWindow):
         else:
             self.ui.startBtn.setText('Stop')
             stop_thread = False
-            threading.Thread(target=convert, args=(self.ui.sens.text(),self.ui.key.text(),)).start()
+            threading.Thread(target=convert, args=(self.ui.sens.value(),self.ui.key.text(),)).start()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
